@@ -8,8 +8,8 @@ type Restaurant {
     address: String!
     city: String!
     rating: Float
-    reviews(rating: Int): [Review]
-    numberOfReviews: Int
+    reviews(rating: Int): [Review!]!
+    numberOfReviews: Int!
 }
 
 type Review {
@@ -17,19 +17,11 @@ type Review {
     message: String
     rating: Int!
     restaurant: Restaurant!
-    replies: [Reply]!
-}
-
-type Reply {
-    id: ID!
-    message: String
-    review: Review
 }
 
 type Query {
     restaurants(city : String): [Restaurant!]!
     restaurant(id: ID!): Restaurant
-    reviews(restaurantId: ID!): [Review!]!
 }
 
 `;
