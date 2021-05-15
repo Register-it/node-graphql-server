@@ -1,0 +1,25 @@
+{
+  "name": "node-graphql-server",
+  "version": "1.0.0",
+  "description": "A skeleton for an implementation of a GraphQL server in nodejs",
+  "author": "Tiziano Pessa (https://github.com/pixel13)",
+  "contributors": [
+    "Lorenzo Spinelli (https://github.com/Spyna)"
+  ],
+  "repository": "github:Register-it/node-graphql-server",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test" : "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Register-it/node-graphql-server/issues"
+  },
+  "homepage": "https://github.com/Register-it/node-graphql-server#readme",
+  "dependencies": {
+    "apollo-server": "^2.24.0",
+    "graphql": "^15.5.0"
+  }
+}
