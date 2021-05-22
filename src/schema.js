@@ -21,7 +21,6 @@ type Review {
 
 type Query {
     restaurants(city : String): [Restaurant!]!
-    restaurant(id: ID!): Restaurant
 }
 
 `;
